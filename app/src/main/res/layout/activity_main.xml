@@ -25,19 +25,19 @@
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="BMW" />
+            android:text="@string/txt_bmw" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mercedes" />
+            android:text="@string/txt_merceds" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Volkswagen" />
+            android:text="@string/txt_volkswagen" />
     </RadioGroup>
 
     <Button

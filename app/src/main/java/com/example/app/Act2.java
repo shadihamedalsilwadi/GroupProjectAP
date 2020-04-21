@@ -9,7 +9,10 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -47,13 +50,52 @@ public class Act2 extends AppCompatActivity {
             }
         });
     }
+    private  Spinner spinner2;
+
+    private CheckBox ch_1;
+    private CheckBox ch_2;
+    private CheckBox ch_3;
+
+    private RadioButton r_Black;
+    private RadioButton r_White;
+    private RadioButton r_Green;
+    private RadioButton r_Blue;
+
+    private Switch sw;
+
     public void openAct3(){
+        spinner2 = findViewById(R.id.spinner);
+        ch_1 = findViewById(R.id.checkBox);
+        ch_2 = findViewById(R.id.checkBox2);
+        ch_3 = findViewById(R.id.checkBox3);
+        r_Black = findViewById(R.id.radioButton4);
+        r_White = findViewById(R.id.radioButton5);
+        r_Green = findViewById(R.id.radioButton6);
+        r_Blue = findViewById(R.id.radioButton7);
+        sw=findViewById(R.id.switch1);
+
+
+        Car c;
+        c = (Car) spinner2.getSelectedItem();
+
+        String adds=" ";
+        if(ch_1.isChecked())adds+="Sunroof, ";
+        if(ch_2.isChecked())adds+="Tires, ";
+        if(ch_3.isChecked())adds+="Backup Camera, ";
+        String col="";
+        if(r_Black.isChecked())col="Black";
+        if(r_White.isChecked())col="White";
+        if(r_Green.isChecked())col="Green";
+        if(r_Blue.isChecked())col="Blue";
+        boolean jeep=false;
+        if(sw.isChecked())jeep=true;
+
+        CarList caros = new CarList(c.getModel(),c.getYear(),c.getMotor(),col,jeep,adds);
 
        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
        SharedPreferences.Editor editor = pref.edit();
        Gson gson = new Gson();
-       Car caro =new Car("Z4","2011","2500");
-       String carsString = gson.toJson(caro);
+       String carsString = gson.toJson(caros);
        editor.putString("123",carsString);
        editor.commit();
         Toast.makeText(this,"Data Saved",Toast.LENGTH_SHORT).show();
