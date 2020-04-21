@@ -3,11 +3,16 @@ package com.example.app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
+
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,6 +48,16 @@ public class Act2 extends AppCompatActivity {
         });
     }
     public void openAct3(){
+
+       SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+       SharedPreferences.Editor editor = pref.edit();
+       Gson gson = new Gson();
+       Car caro =new Car("Z4","2011","2500");
+       String carsString = gson.toJson(caro);
+       editor.putString("123",carsString);
+       editor.commit();
+        Toast.makeText(this,"Data Saved",Toast.LENGTH_SHORT).show();
+
         Intent intent = new Intent(this,Act3.class);
         startActivity(intent);
     }

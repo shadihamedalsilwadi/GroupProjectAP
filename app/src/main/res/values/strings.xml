@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">app</string>
     <string name="mercedes">Mercedes</string>
+    <string name="txt_merceds">Merceds</string>
+    <string name="chbtn_sunroof">Sunroof</string>
+    <string name="chbtn_tires">Tires</string>
+    <string name="chbtn_backup_camera">Backup Camera</string>
+    <string name="txt_additions">Additions</string>
+    <string name="txt_bmw">BMW</string>
 </resources>

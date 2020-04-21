@@ -22,7 +22,7 @@
         android:id="@+id/textView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Merceds" />
+        android:text="@string/txt_merceds" />
 
     <Spinner
         android:id="@+id/spinner1"
@@ -30,7 +30,6 @@
         android:layout_height="wrap_content" />
 
     <TextView
-
         android:layout_width="match_parent"
         android:layout_height="50dp"
         tools:ignore="DuplicateIds" />
@@ -39,25 +38,25 @@
         android:id="@+id/t2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Additions" />
+        android:text="@string/txt_additions" />
 
     <CheckBox
         android:id="@+id/ch1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sunroof" />
+        android:text="@string/chbtn_sunroof" />
 
     <CheckBox
         android:id="@+id/ch2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tires" />
+        android:text="@string/chbtn_tires" />
 
     <CheckBox
         android:id="@+id/ch3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Backup Camera" />
+        android:text="@string/chbtn_backup_camera" />
 
 
     <TextView
