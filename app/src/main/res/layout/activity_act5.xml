@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volkswagen"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="@android:dimen/app_icon_size" />
+
+
+    <Spinner
+        android:id="@+id/sp8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text90"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Additions" />
+
+    <CheckBox
+        android:id="@+id/checkBox90"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sunroof" />
+
+    <CheckBox
+        android:id="@+id/checkBox20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tires" />
+
+    <CheckBox
+        android:id="@+id/checkBox30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Backup Camera" />
+
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:text="Color" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Black" />
+
+        <RadioButton
+            android:id="@+id/radioButton50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="White" />
+
+        <RadioButton
+            android:id="@+id/radioButton60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grey" />
+
+        <RadioButton
+            android:id="@+id/radioButton70"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red" />
+
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/switch10"
+        android:layout_width="123dp"
+        android:layout_height="41dp"
+        android:layout_margin="@android:dimen/app_icon_size"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:text="4X4" />
+
+    <Button
+        android:id="@+id/button90"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Next" />
+
+</LinearLayout>
